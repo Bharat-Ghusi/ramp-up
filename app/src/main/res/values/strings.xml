@@ -46,4 +46,11 @@
     <string name="btnActivityLifeCycle">Activity LifeCycle</string>
     <string name="btnFragmentLifeCycle">Fragment LifeCycle</string>
     <string name="tvActivityStatus">Activity Status</string>
+    <string name="add">Add</string>
+    <string name="defaultValue">0</string>
+    <string name="title_activity_fragment_life_cycle">ActivityFragmentLifeCycle</string>
+    <string name="btnIntentExample">Intent Example</string>
+    <string name="btnImplicit">Implicit Intent</string>
+    <string name="btnExplicit">Explicit Intent</string>
+    <string name="textDestination">Destination Activity</string>
 </resources>

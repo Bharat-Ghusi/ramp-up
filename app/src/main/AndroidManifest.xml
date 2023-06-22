@@ -14,7 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RampUp"
         tools:targetApi="31">
-
+        <activity
+            android:name=".destination.ActivityDestination"
+            android:exported="false" />
+        <activity
+            android:name=".intent.ActivityIntentExample"
+            android:exported="false" />
+        <activity
+            android:name=".fragmentlifecycle.ActivityFragmentLifeCycle"
+            android:exported="false"
+            android:label="@string/title_activity_fragment_life_cycle"
+            android:theme="@style/Theme.RampUp" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -26,7 +36,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".activitylifecycle.ActivityLifeCycle"
             android:exported="false" />

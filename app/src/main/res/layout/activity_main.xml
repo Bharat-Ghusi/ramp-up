@@ -36,5 +36,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnActivityLifeCycle"
             tools:text="@string/btnFragmentLifeCycle" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnIntentExample"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/btnIntentExample"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFragmentLifeCycle"
+            tools:text="@string/btnIntentExample" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

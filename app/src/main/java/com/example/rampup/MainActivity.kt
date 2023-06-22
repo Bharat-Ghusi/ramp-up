@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import com.example.rampup.activitylifecycle.ActivityLifeCycle
 import com.example.rampup.databinding.ActivityMainBinding
+import com.example.rampup.fragmentlifecycle.ActivityFragmentLifeCycle
+import com.example.rampup.intent.ActivityIntentExample
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -31,6 +33,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding?.apply {
             btnActivityLifeCycle.setOnClickListener(this@MainActivity)
             btnFragmentLifeCycle.setOnClickListener(this@MainActivity)
+            btnIntentExample.setOnClickListener(this@MainActivity)
         }
     }
 
@@ -38,8 +41,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         when(view?.id)
         {
             R.id.btnActivityLifeCycle -> redirectToActivityLifCycle()
+            R.id.btnFragmentLifeCycle -> redirectToFragmentLifeCycle()
+            R.id.btnIntentExample -> redirectToIntentExample()
             else -> noClickListenerAttach()
         }
+    }
+    /**
+     * Method demonstrates Intent [explicit and Implicit]
+     */
+    private fun redirectToIntentExample() {
+        startActivity(Intent(this,ActivityIntentExample::class.java))
+    }
+
+    /**
+     * Method demonstrates Fragment life cycle
+     */
+    private fun redirectToFragmentLifeCycle() {
+        startActivity(Intent(this,ActivityFragmentLifeCycle::class.java))
     }
 
     /**

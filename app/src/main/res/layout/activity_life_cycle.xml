@@ -5,19 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    tools:context=".MainActivity">
+    tools:context=".activitylifecycle.ActivityLifeCycle">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/add"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvAdditionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/defaultValue"
+            android:gravity="center"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@+id/btnAdd"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvActivityStatus"
             android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
-            android:text="@string/tvActivityStatus"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
             android:textAllCaps="false"
+            android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
